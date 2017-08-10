@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+.chat-body {
+    width: 890px;
+    height: 630px;
+    background-color: #00B5AD;
+}
+.mediate {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.sing-line {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chat-interface{
+    width: 850px;
+    height: 590px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    background-color: #0E566C;
+}
+/*左边侧边栏*/
+.left-sidebar {
+    width: 60px;
+    height: inherit;
+    padding: 20px 0;
+    background-color: #2B2B2C;
+}
+.left-sidebar .icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 30px;
+    background-color: darkgreen;
+    color: #EEEAE8;
+}
+.left-sidebar .chat-icon {
+    color: #09BB07;
+    position: relative;
+}
+.left-sidebar .user-icon {
+    color: #EEEAE8;
+}
+.left-sidebar .label-tip:after {
+    right: -14px;
+    top: 0;
+}
+.label-tip:after {
+    content: '11+';
+    display: block;
+    position: absolute;
+    color: white;
+    border-radius: 10px;
+    line-height: 12px;
+    padding: 4px;
+    height: 20px;
+    font-size: 12px;
+    transform:scale(0.8);
+    background-color: red;
+
+}
+/*中间列表部分*/
+.category-list-bar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: inherit;
+    background-color: #EEEAE8;
+}
+.category-list-header {
+    height: 61px;
+}
+.category-list-header .search-box {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 14px;
+    position: relative;
+}
+.category-list-header .search-box input {
+    width: 186px;
+    padding: 0 5px;
+    height: 27px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    border-radius: 3px;
+    outline: none;
+    margin-right: 10px;
+}
+.category-list-header .search-box .search-icon{
+    position: absolute;
+    top: 4px;
+    left: 160px;
+    color: #A4A3A3;
+    font-weight: normal;
+    cursor: pointer;
+}
+.category-list-header .search-box .add-icon {
+    height: 27px;
+    width: 27px;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.category-list-header .search-box .add-icon {
+    font-size: 18px;
+}
+.category-list-header .search-box .add-icon:before{
+    cursor: pointer;
+    display: block;
+    margin-top: 4px;
+}
+.category-list-box {
+    flex: 1;
+}
+.category-list-box .list-headline {
+    display: flex;
+    padding: 12px 14px;
+}
+.category-list-box .list-headline.active {
+    background-color: #C5C5C5;
+}
+.category-list-box .list-headline:not(.active):hover {
+    background-color: #DED9DE;
+}
+.category-list-box .list-headline .img {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    background-color: #0ea432;
+}
+.category-list-box .list-headline .label-tip:after{
+    top: -10px;
+    right: -10px;
+}
+.category-list-box .list-headline .desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.category-list-box .list-headline .desc .line-name {
+    display: flex;
+    height: 24px;
+    line-height: 24px;
+}
+.category-list-box .list-headline .desc .line-name .title {
+    font-size: 15px;
+    width: 124px;
+    color: black;
+}
+.category-list-box .list-headline .desc .line-name .time {
+    width: 44px;
+    text-align: right;
+    font-size: 12px;
+    color: rgba(0,0,0, 0.4);
+}
+.category-list-box .list-headline .desc .message-tip {
+    flex: 1;
+    width: 165px;
+    font-size: 12px;
+    color: rgba(0,0,0, 0.4);
+}
+/*右边聊天室部分*/
+.chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+.chat-box-header {
+    height: 60px;
+    border-bottom: 1px solid #F6E7E7;
+}
+.chat-box-room {
+    flex: 1;
+}
+.chat-box-editor {
+    height: 145px;
+    border-top: 1px solid #F6E7E7;
+    /*background-color: #FFFFFF;*/
+}
